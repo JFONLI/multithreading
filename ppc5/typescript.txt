@@ -1,0 +1,24 @@
+Script started on 2021-01-15 05:23:08+08:00 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;jfon@DESKTOP-4IPO7H5: /mnt/c/Users/JFON/Downloads/project/project[01;32mjfon@DESKTOP-4IPO7H5[00m:[01;34m/mnt/c/Users/JFON/Downloads/project/project[00m$ make clean
+rm *.hex *.ihx *.lnk *.lst *.map *.mem *.rel *.rst *.sym
+rm: cannot remove '*.hex': No such file or directory
+rm: cannot remove '*.ihx': No such file or directory
+rm: cannot remove '*.lnk': No such file or directory
+rm: cannot remove '*.lst': No such file or directory
+rm: cannot remove '*.map': No such file or directory
+rm: cannot remove '*.mem': No such file or directory
+rm: cannot remove '*.rel': No such file or directory
+rm: cannot remove '*.rst': No such file or directory
+rm: cannot remove '*.sym': No such file or directory
+make: *** [Makefile:25: clean] Error 1
+]0;jfon@DESKTOP-4IPO7H5: /mnt/c/Users/JFON/Downloads/project/project[01;32mjfon@DESKTOP-4IPO7H5[00m:[01;34m/mnt/c/Users/JFON/Downloads/project/project[00m$ make
+sdcc -c  testparking.c
+testparking.c:32: warning 158: overflow in implicit constant conversion
+testparking.c:125: warning 126: unreachable code
+sdcc -c  preemptive.c
+preemptive.c:192: warning 85: in function ThreadCreate unreferenced function argument : 'fp'
+sdcc  -o testparking.hex testparking.rel preemptive.rel
+]0;jfon@DESKTOP-4IPO7H5: /mnt/c/Users/JFON/Downloads/project/project[01;32mjfon@DESKTOP-4IPO7H5[00m:[01;34m/mnt/c/Users/JFON/Downloads/project/project[00m$ ext[Kit
+exit
+
+Script done on 2021-01-15 05:23:16+08:00 [COMMAND_EXIT_CODE="0"]
